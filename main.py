@@ -82,8 +82,7 @@ eod_exchange('ftx')
 df = pd.DataFrame(ftx.fetch_total_balance(), index = ['Quantity']).T
 df
 # %%
-public, secret = "7YSpLaf0FRHfTVmJ7oafc09RJH22grZod5iIiWwvxv5U9avhtYaJdt6GDyIBGcin", "OFruj7RgTyWNJFDjo55E30AQ20DlrN6XMU5fONDwVh0AD3Y4IVMTIchSshZb4ZUf"
-binance = ccxt.binance({'enableRateLimit':True,'apiKey':public,'secret':secret})
+
 
 # %%
 binance.fetch_ticker('BTCUSDT')
